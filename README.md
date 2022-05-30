@@ -1,6 +1,6 @@
 # Galleria
 
-<img src="./">
+<img src="./images">
 
 <br>
 
@@ -64,7 +64,7 @@ Javascript
 
 ## Licence
 
-   copyright © Charity 2022 - <a href=""> MIT </a>
+   copyright © Mercy 2022 - <a href=""> MIT </a>
 
 ## Authors Info
 
