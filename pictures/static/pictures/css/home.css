@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Oswald:wght@300&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
+
+ img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.cont{
+    background-color: white;
+    width:90%;
+    max-width: 900px;
+    margin: 0  auto;
+    box-shadow: 0px 0px 61px 7px #7C3E66;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.gallery{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    margin-top:50px;
+    grid-gap: 20px;
+}
+.ttl{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #2E0249;
+    margin-left:10%;
+    margin-bottom: 20px;
+}
+
+.not-found{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #2E0249;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item{
+    width:100%;
+    height:300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s ease box-shadow;
+
+}
+.less-3{
+    width:50%;
+    margin:0 auto;
+    height:300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s ease box-shadow;
+
+}
+
+
+.item:hover {
+    box-shadow: 0px 0px 20px 3px #00000042;
+      
+
+}
+
+.item h3{
+    width:100%;
+    padding: 20px;
+    position: absolute;
+    background-color: #00000040;
+    color: aliceblue;
+    left:0;
+    bottom: -70px;
+    font-weight: 500;
+    transition: .5s  ease-in-out bottom;
+    font-family: 20px;
+}
+
+.item:hover h3{
+    bottom: -10px;
+    
+}
+
+.close-btn,.copy{
+    padding: 2% 10%;
+    border: 1px solid #2E0249;
+    background-color: transparent;
+}
+
+.link{
+    display: none;
+}
+
+.dits{
+    margin: 2% 0;
+    padding: 2%;
+}
+.dits-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.dits-1 small span{
+    color:#2E0249;
+    font-weight: 300;
+    
+}
+
+@media only screen  and (min-width:900px){
+    .cont{
+        max-width: 1160px;
+        padding:100px;
+    }
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+
+    input {
+        font-size: 24px;
+
+    }
+  
+    .gallery {
+        grid-gap: 30px;
+    }
+} 
+
+
+/* modal styles */
+
+.hide{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50%;
+    background-color: #111;
+    color: #fff;
+    height: 50%;
+    display: none;
+    /* animation: showmodal 1s ease 0s 1 normal forwards; */
+}
+.show{
+    display: block;
+}
