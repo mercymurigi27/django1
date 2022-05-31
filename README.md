@@ -1,6 +1,6 @@
 # Galleria
 
-<img src="./static/images">
+<img src="./pictures/images">
 
 <br>
 
